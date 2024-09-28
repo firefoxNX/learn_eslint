@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -11,10 +12,11 @@
   "description": "",
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.4.0",
-    "eslint": "^9.4.0",
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
     "eslint-plugin-header": "^3.1.1",
-    "eslint-plugin-json": "^4.0.0",
-    "globals": "^15.4.0"
+    "eslint-plugin-json": "^4.0.1",
+    "globals": "^15.9.0",
+    "mocha": "^10.7.3"
   }
 }

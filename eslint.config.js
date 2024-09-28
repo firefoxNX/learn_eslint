@@ -1,7 +1,9 @@
+/*Copyright 2024, CompanyName, Inc.  All rights reserved.*/
 const json = require('eslint-plugin-json');
 const header = require('eslint-plugin-header');
 const globals = require('globals');
 const js = require('@eslint/js');
+header.rules.header.meta.schema = false;
 
 const {
     FlatCompat,
@@ -35,7 +37,7 @@ module.exports = [...compat.extends('eslint:recommended'), {
             after: true
         },
 
-        ecmaVersion: 2020,
+        ecmaVersion: 'latest',
         sourceType: 'commonjs'
     },
     rules: {
